@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="REGISTER"
+        android:textSize="35dp"
+        android:textColor="#570000"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/outlinedName"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:endIconMode="clear_text"
+    app:startIconDrawable="@drawable/ic_person"
+    app:helperText="Bắt Buộc *"
+    app:helperTextTextColor="@color/red"
+
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+       android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Tên"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedEmail"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_email"
+        app:helperText="Bắt Buộc *"
+        app:helperTextTextColor="@color/red"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Email"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_phone"
+        app:helperText="Bắt Buộc *"
+        app:helperTextTextColor="@color/red"
+        android:padding="10dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Số Điện Thoại"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+android:padding="10dp"
+app:startIconDrawable="@drawable/ic_baseline_add_location"
+android:id="@+id/outlinedAdress"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:endIconMode="clear_text"
+app:helperText="Bắt Buộc *"
+app:helperTextTextColor="@color/red"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/edt_adress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nhập Địa Chỉ"
+    />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btn_add"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="INSERT DATA"
+app:cornerRadius="5dp"
+android:padding="10dp"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp">
+
+</com.google.android.material.button.MaterialButton>
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        android:drawableLeft="@drawable/ic_cancel"
+        android:text="HUỶ"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+</LinearLayout>
